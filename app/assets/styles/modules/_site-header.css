@@ -11,7 +11,12 @@
     }
     
     @mixin atMedium {
+        position: fixed;
         background-color: rgba($mainBlue, .3);
+        
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     
     }
    
@@ -29,6 +34,8 @@
         -webkit-transform: translaleX(-50%);
         -ms-transform: translaleX(-50%);
         transform: translaleX(-50%) scale(.8);
+        -webkit-transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
         -webkit-transform-origin: 50% 0;
         -ms-transform-origin: 50% 0;
         transform-origin: 50% 0;
@@ -40,6 +47,12 @@
             -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
             transform: translateX(0);
+            
+            .site-header--dark & {
+                -webkit-transform: scale(.57);
+                -ms-transform: scale(.57);
+                transform: scale(.57);
+            }
         }
     }
     
