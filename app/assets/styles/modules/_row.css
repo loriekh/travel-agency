@@ -96,7 +96,7 @@
     
     
     /* Being Equal height rule */
-    &--equal-height-at-medium {
+.flexbox &--equal-height-at-medium {
         @mixin atMedium {
             display: -webkit-box;
             display: -webkit-flex;
@@ -113,7 +113,7 @@
         }
     }
     
-        &--equal-height-at-large {
+.flexbox &--equal-height-at-large {
         @mixin atLarge {
             display: -webkit-box;
             display: -webkit-flex;

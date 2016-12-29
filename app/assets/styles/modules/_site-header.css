@@ -24,7 +24,6 @@
         @mixin atMedium {
             float: right; 
         }
-
     }
     
     &__logo {
@@ -49,9 +48,9 @@
             transform: translateX(0);
             
             .site-header--dark & {
-                -webkit-transform: scale(.57);
-                -ms-transform: scale(.57);
-                transform: scale(.57);
+                -webkit-transform: scale(.56);
+                -ms-transform: scale(.56);
+                transform: scale(.56);
             }
         }
     }
