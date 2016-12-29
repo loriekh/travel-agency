@@ -2,11 +2,10 @@
 
   @mixin clearfix;
 
-    
-    &--t-padding {
-        padding-top: 80px;
-    }
-    
+  &--t-padding {
+    padding-top: 80px;
+  }
+
   &--gutters {
     margin-right: -65px;
   }
@@ -15,10 +14,10 @@
     margin-right: -100px;
   }
 
-    &--gutters-small {
-        margin-right: -45px;
-    }
-    
+  &--gutters-small {
+    margin-right: -45px;
+  }
+
   &--gutters > div {
     padding-right: 65px;
   }
@@ -27,9 +26,10 @@
     padding-right: 100px;
   }
 
-    &--gutters-small > div {
-        padding-right: 45px;
-    }
+  &--gutters-small > div {
+    padding-right: 45px;
+  }
+
   &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
@@ -62,9 +62,10 @@
     &__medium-8--smaller {
       width: 63%;
     }
+
   }
-  
-      @mixin atLarge {
+
+  @mixin atLarge {
 
     &__b-margin-until-large {
       margin-bottom: 0;
@@ -92,42 +93,32 @@
     &__large-8--smaller {
       width: 63%;
     }
+
   }
-    
-    
-    /* Being Equal height rule */
-.flexbox &--equal-height-at-medium {
-        @mixin atMedium {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-        }
-        
-        & > div {
-            float: none;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-        }
+  
+  /* Begin Equal Height Rules */
+  .flexbox &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
     }
-    
-.flexbox &--equal-height-at-large {
-        @mixin atLarge {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-        }
-        
-        & > div {
-            float: none;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-        }
+
+    & > div {
+      float: none;
+      display: flex;
     }
+
+  }
+
+  .flexbox &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+
+  }
 
 }
